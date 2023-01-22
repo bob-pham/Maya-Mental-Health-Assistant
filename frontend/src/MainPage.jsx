@@ -21,9 +21,9 @@ const Dictaphone = () => {
         </div>
         <p className="text-center">Microphone: {listening ? 'on' : 'off'}</p>
         <div>
-          <button className="btn btn-success mx-5" onClick={SpeechRecognition.startListening}>Start</button>
-          <button className="btn btn-error mx-5" onClick={SpeechRecognition.stopListening}>Stop</button>
-          <button className="btn btn-warning mx-5" onClick={resetTranscript}>Reset</button>
+          <button className="btn btn-success m-5" onClick={SpeechRecognition.startListening}>Start</button>
+          <button className="btn btn-error m-5" onClick={SpeechRecognition.stopListening}>Stop</button>
+          <button className="btn btn-warning m-5" onClick={resetTranscript}>Reset</button>
         </div>
       </div>
     );
@@ -42,7 +42,7 @@ export default function MainPage() {
 
     return (
         <main className="bg-blue-500 w-screen h-screen grid place-items-center">
-          <h1 className="text-6xl text-white">Let's Talk!</h1>
+          <h1 className="text-5xl text-white place-items-center m-8">Hey *user name or nothing*, what's on your mind?</h1>
         <div className="text-2xl text-white">
             <Dictaphone />
             <Response resp={resp}/>

@@ -1,4 +1,5 @@
 import { useEffect, useState, React } from 'react';
+import {Link} from 'react-router';
 
 export default function Homepage() {
 
@@ -23,6 +24,9 @@ export default function Homepage() {
         <>
         <main className="grid place-items-center w-screen h-screen 
         bg-gradient-to-tr from-blue-200 to-blue-600 via-blue-400 animate-gradient-xy">
+            <div>
+            <a href="/Aboutpage" className='text-sm text-white hover:text-blue-600 m-2 mr-10 m absolute top-0 right-0'>About Us</a>
+            </div>
             <div className="grid place-items-center w-3/4 rounded bg-">
                 <h1 className="text-6xl text-white">Hi, I'm Maya</h1>
                 <span className="label-text text-lg text-white my-5">What is your name?</span>

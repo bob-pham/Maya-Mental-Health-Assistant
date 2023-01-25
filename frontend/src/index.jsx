@@ -11,20 +11,17 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-          <Route path="/" element={<Homepage />}/>
+          <Route path="/" exact={true} element={<Homepage />}/>
           <Route exact path="/MainPage" element={<MainPage />}/>
-      </Routes>
-
-      <Routes>
-          <Route path="/" element={<Homepage />}/>
           <Route exact path="/Aboutpage" element={<AboutUsPage />}/>
       </Routes>
+    </Router>
 
-      <Routes>
-          <Route path="/" element={<AboutUsPage />}/>
+    <Router>
+     <Routes>
+          <Route path="/." element={<AboutUsPage />}/>
           <Route exact path="/HomePage" element={<Homepage />}/>
       </Routes>
-
     </Router>
   </React.StrictMode>
 );

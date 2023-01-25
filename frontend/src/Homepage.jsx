@@ -21,8 +21,8 @@ export default function Homepage() {
     }, [])
 
     return (
-        <>
-        <main className="grid place-items-center w-screen h-screen 
+    
+        <div className="grid place-items-center w-screen h-screen 
         bg-gradient-to-tr from-blue-200 to-blue-600 via-blue-400 animate-gradient-xy">
             <div>
             <a href="/Aboutpage" className='text-sm text-white hover:text-blue-600 m-2 mr-10 m absolute top-0 right-0'>About Us</a>
@@ -45,7 +45,7 @@ export default function Homepage() {
             <div>
                 <p className="text-white">By: Grace, Bob, Brian, Jennifer</p>
             </div>
-        </main>
-        </>
+        </div>
+        
     )
 }
